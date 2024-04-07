@@ -12,7 +12,7 @@ print(y)
 # now taking care of missing data... 
 imputer = SimpleImputer(missing_values=np.NaN, strategy='mean')
 imputer.fit(x[:,1:3])
-x[:,1:3]=imputer.transform(x[:,1:3])
+x[:,1:3]=imputer.transform(x[:,1:3]) 
 print(x)
 #also using dataframe...use notebook jupyter
 '''imputer = SimpleImputer(missing_values=np.NaN, strategy='mean')
